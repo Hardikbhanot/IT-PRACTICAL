@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5th Practical</title>
+    <style>
+        
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-button {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+    </style>
+  </head>
+  <body>
+    <p class="para">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+      maiores natus amet molestiae aliquid libero vero perspiciatis corrupti
+      magni sapiente sunt nobis beatae, voluptatibus ratione. Blanditiis
+      deleniti corporis consequatur impedit similique fugiat vero tempora
+      nesciunt incidunt saepe, voluptatum repellendus. Tempora asperiores
+      consequuntur ducimus similique possimus expedita labore est, voluptates
+      reprehenderit neque quidem deserunt eos distinctio? Pariatur aliquid
+      repellat ex laudantium, quia expedita reprehenderit doloribus excepturi,
+      sint voluptas voluptatum? Exercitationem a illo, ullam quasi id autem
+      ipsam vero, placeat sequi perferendis deleniti, reprehenderit nemo.
+      Deserunt incidunt error eius ad ipsum natus officia quidem dolores numquam
+      nam nemo, voluptates voluptatum quod ullam harum, accusamus ut? Hic qui
+      natus labore, quisquam dolores quibusdam sit unde omnis! Fuga consequuntur
+      commodi quos? Necessitatibus repudiandae mollitia, eligendi illum quos nam
+      sint voluptatibus numquam est magni incidunt accusantium. Laboriosam ullam
+      recusandae nulla blanditiis debitis assumenda quaerat. Vel ipsum
+      voluptatum commodi non. Voluptate, quos nemo. Nemo impedit libero
+      assumenda quae. Culpa aut molestias modi id maxime repudiandae sit
+      quibusdam atque veritatis expedita odit corrupti omnis nostrum ipsum
+      voluptatem, illum maiores dolorum in molestiae fugiat saepe facilis
+      laborum doloremque? Sed nobis, odio deserunt itaque nostrum architecto
+      consequatur cupiditate quos ducimus ratione reiciendis voluptates odit
+      repellat hic perferendis nihil aliquid consectetur quae culpa mollitia
+      ipsam beatae, rem, at adipisci. Culpa sed quas nihil et quod perspiciatis
+      soluta voluptatibus qui vero veritatis dignissimos doloribus ducimus,
+      consequuntur dolores sit pariatur consequatur eos nam sunt. Praesentium,
+      repellendus reprehenderit quo, ut illo eaque vero esse doloribus
+      aspernatur porro qui nemo at in quisquam nesciunt sunt architecto facilis
+      debitis libero aliquam consequatur doloremque numquam. Ab, doloremque
+      eius. Ipsa cumque consequatur quod accusamus aspernatur aperiam voluptatum
+      aut sunt omnis? Animi illum saepe modi incidunt debitis, dolorum enim
+      dicta excepturi dolore, hic dolorem consequatur cum tempore sit aperiam
+      eligendi sunt quidem officiis quo laudantium nisi rerum perferendis
+      ducimus? Totam similique illum ipsa pariatur tempora quisquam sint sequi
+      consequatur, minima deserunt, doloremque mollitia sunt molestias? Nesciunt
+      aspernatur error nostrum dolorum eaque eveniet natus inventore dignissimos
+      officia ipsam quia quos suscipit, minima molestiae vitae, labore aut quod
+      praesentium cum magnam, accusamus delectus. Magni laborum molestiae minima
+      fuga quaerat totam fugit labore, sunt dolorum itaque amet? Recusandae quia
+      impedit repellat voluptas sequi modi dolores voluptatem autem nam
+      voluptate! Repudiandae cupiditate officiis, facere eius magnam veniam,
+      tempore ipsam, similique nulla atque molestiae saepe illo suscipit
+      reprehenderit! Laboriosam dicta nam provident. Laudantium, corporis
+      dolorem quisquam pariatur eos repellendus ex rem provident tempora
+      distinctio, nesciunt sapiente recusandae quaerat nisi impedit blanditiis
+      architecto deserunt? Blanditiis non laboriosam qui sed perspiciatis,
+      dolorum quo repellat obcaecati amet! Obcaecati, quibusdam, nisi amet quas
+      atque voluptate nesciunt deleniti voluptatem laudantium pariatur aperiam,
+      distinctio veniam magni optio at saepe tempora. Minima totam obcaecati
+      neque maxime reprehenderit atque numquam omnis.
+    </p>
+    <div class="grid-container">
+
+    
+    <button class="grid-button grid-button1">RED</button>
+    <button class="grid-button2 grid-button">Green</button>
+    <button class="grid-button grid-button3">Blue</button>
+    
+    <button class="grid-button grid-button4">10</button>
+    <button class="grid-button grid-button5">20</button>
+    <button class="grid-button grid-button6">30</button>
+    
+    <button class="grid-button grid-button7">sans-serif</button>
+    <button class="grid-button grid-button8">serif</button>
+    <button class="grid-button grid-button9">monospace</button>
+    </div>
+
+    <script>
+        document.querySelector(".grid-button1").addEventListener('click', function(){
+            document.querySelector(".para").style.color = "red";
+        });
+        document.querySelector(".grid-button2").addEventListener('click', function(){
+            document.querySelector(".para").style.color = "green";
+        });
+        document.querySelector(".grid-button3").addEventListener('click', function(){
+            document.querySelector(".para").style.color = "blue";
+        });
+        document.querySelector(".grid-button4").addEventListener('click', function(){
+            document.querySelector(".para").style.fontSize = "10px";
+        });
+        document.querySelector(".grid-button5").addEventListener('click', function(){
+            document.querySelector(".para").style.fontSize = "20px";
+        });
+        document.querySelector(".grid-button6").addEventListener('click', function(){
+            document.querySelector(".para").style.fontSize = "30px";
+        });
+        document.querySelector(".grid-button7").addEventListener('click', function(){
+            document.querySelector(".para").style.fontFamily = "sans-serif";
+        });
+        document.querySelector(".grid-button8").addEventListener('click', function(){
+            document.querySelector(".para").style.fontFamily = "serif";
+        });
+        document.querySelector(".grid-button9").addEventListener('click', function(){
+            document.querySelector(".para").style.fontFamily = "monospace";
+        });
+       
+        
+    </script>
+  </body>
+</html>
