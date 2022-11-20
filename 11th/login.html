@@ -1,98 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-</head>
-<style>
-* {box-sizing: border-box;}
-body{
-background-color: #313552;
-}
-form{
-margin-left: 35%;
-margin-top: 5%;
-max-width: 30%;
-background-color: #EEE6CE;
-color: black;
-}
-/* Full-width input fields */
-input[type=text], input[type=password] {
-width: 100%;
-padding: 15px;
-margin: 5px 0 22px 0;
-display: inline-block;
-border: none;
-background: #f1f1f1;
-}
-input[type=text]:focus, input[type=password]:focus {
-background-color: #ddd;
-outline: none;
-}
-hr {
-border: 1px solid #f1f1f1;
-margin-bottom: 25px;
-}
-/* Set a style for all buttons */
-button {
-background-color: #2EB086;
-color: white;
-padding: 14px 20px;
-margin: 8px 0;
-border: none;
-cursor: pointer;
-width: 100%;
-opacity: 0.9;
-}
-button:hover {
-opacity:1;
-}
-/* Extra styles for the cancel button */
-.cancelbtn {
-padding: 14px 20px;
-background-color: #B8405E;
-}
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-float: left;
-width: 50%;
-}
-/* Add padding to container elements */
-.container {
-padding: 16px;
-}
-/* Clear floats */
-.clearfix::after {
-content: "";
-clear: both;
-display: table;
-}
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-.cancelbtn, .signupbtn {
-width: 100%;
-}
-}
-</style>
-<body>
-<form action="http://localhost:10000/login" method="post" enctype="text/plain"
-style="border:1px solid #ccc">
-<div class="container">
-<h1>LogIn</h1>
-<hr>
-<label for="email"><b>Email</b></label>
-<input type="text" placeholder="Enter Email" name="email" required>
-<label for="psw"><b>Password</b></label>
-<input type="password" placeholder="Enter Password" name="password" required>
-<p>Don't have an account? <a href="#" style="color:dodgerblue">SignUp</a>.</p>
-<p><a href="#" style="color:dodgerblue">Forgot password?</a>.</p>
-<div class="clearfix">
-<button type="button" class="cancelbtn">Cancel</button>
-<button type="submit" class="signupbtn">LogIn</button>
-</div>
-</div>
-</form>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #943850;
+    }
+    form {
+      margin-left: 25%;
+      margin-top: 5%;
+      max-width: 50%;
+      background-color: #2fa7c9;
+      color: black;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 5px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      font-size: 1.3rem;
+      background: #f1f1f1;
+    }
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+    /* Set a style for all buttons */
+    button {
+      background-color: #273fca;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      scale: 0.95;
+    }
+    button:hover {
+      scale: 1.2;
+    }
+
+    /* Float cancel and signup buttons and add an equal width */
+    .signupbtn {
+      float: left;
+      width: 30%;
+    }
+    /* Add padding to container elements */
+    .container {
+      padding: 16px;
+    }
+    /* Clear floats */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    /* Change styles for cancel button and signup button on extra small screens */
+    @media screen and (max-width: 300px) {
+      .signupbtn {
+        width: 100%;
+      }
+    }
+  </style>
+  <body>
+    <form
+      action="http://localhost:10000/login"
+      method="post"
+      enctype="text/plain"
+    >
+      <div class="container">
+        <h1>LogIn</h1>
+        <hr />
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required />
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          required
+        />
+        <p>
+          Don't have an account?
+          <a href="./signup.html" style="color: dodgerblue">SignUp</a>.
+        </p>
+        <div class="clearfix">
+          <button type="submit" class="signupbtn">LogIn</button>
+        </div>
+      </div>
+    </form>
+  </body>
 </html>
