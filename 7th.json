@@ -1,0 +1,23 @@
+[
+{
+    "name": "doggo",
+    "age": "04",
+    "weight": "30",
+    "type": "dog",
+    "liking": "foooodd"
+},
+{
+    "name": "catto",
+    "age": "02",
+    "weight": "10",
+    "type": "cat",
+    "liking": "mice"
+},
+{
+    "name": "birdo",
+    "age": "01",
+    "weight": "05",
+    "type": "bird",
+    "liking": "worms"
+}
+]
